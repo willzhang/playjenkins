@@ -16,7 +16,7 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: willdockerhub/myweb:8
+      - image: willdockerhub/myweb:10
         imagePullPolicy: Always
         name: myweb
 
