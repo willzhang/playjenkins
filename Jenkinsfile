@@ -2,7 +2,7 @@ pipeline {
 
   environment {
     registry = "willdockerhub/myweb"
-    registryCredential = "dockerhub"
+    registryCredential = 'dockerhub'
     dockerImage = ""
   }
 
@@ -27,7 +27,7 @@ pipeline {
     stage('Push Image') {
       steps{
         script {
-          docker.withRegistry( "", registryCredential ) {		
+          docker.withRegistry( '', registryCredential ) {		
             dockerImage.push()
           }
         }
